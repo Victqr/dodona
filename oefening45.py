@@ -1,9 +1,12 @@
-getal1 = int(input("Geef het eerste gehele getal: "))
-getal2 = int(input("Geef het tweede gehele getal: "))
+# Vraag de gebruiker om een natuurlijk getal N
+N = int(input("Voer een natuurlijk getal in: "))
 
-if getal1 < getal2:
-    kleinste = getal1
-else:
-    kleinste = getal2
+# Initialisatie van het natuurlijk getal en het kwadraat
+natuurlijk_getal = 1
+kwadraat = 1
 
-print(f"{kleinste}")
+# Blijf kwadraten afdrukken totdat kwadraat groter is dan N
+while kwadraat <= N:
+    print(kwadraat, end=" ")
+    natuurlijk_getal += 1
+    kwadraat = natuurlijk_getal ** 2
